@@ -18,9 +18,10 @@ Many thanks to L. Yates for debugging most of these steps.
         ln -s [uboonecode folder] larsoft
      The scripts will assume this.
   3. Modify the init.sh script to setup larlite and larsoft environment variables
-  4. Modify the project.py xml file [dl_michel.xml] to point to your data, log, work, software, larsoft directories
+  4. Modify filter_ext.fcl to point to the michel event list in your folder
+  5. Modify the project.py xml file [michel_ext.xml] to point to your data, log, work, software, larsoft directories
   5. Run stage1, which filters the events from the RAW files
-        project.py --xml michel.xml --stage filter --submit
+        project.py --xml michel_ext.xml --stage filter --submit
   6. Wait: check on jobs using
         jobsub_q --user [username]
   7. Once jobs done, check them

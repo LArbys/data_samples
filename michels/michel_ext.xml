@@ -9,8 +9,8 @@
 <!ENTITY name    "michel_sample">
 <!ENTITY user "tmw">
 <!ENTITY runnum "01">
-<!ENTITY data_dir     "/pnfs/uboone/scratch/users/tmw/dl_litemaker/data">
-<!ENTITY local_dir    "/pnfs/uboone/scratch/users/tmw/dl_litemaker/work">
+<!ENTITY data_dir     "/pnfs/uboone/persistent/users/tmw/dl_michel">
+<!ENTITY local_dir    "/pnfs/uboone/persistent/users/tmw/dl_michel">
 <!ENTITY software_dir "/uboone/app/users/tmw/projects/dl_litemaker/data_samples/michels" >
 ]>
 
@@ -41,9 +41,9 @@
     <inputdef>prod_ext_reco_inclusive_v2</inputdef>
     <fcldir>&software_dir;</fcldir>
     <fcl>filter_ext.fcl</fcl>
-    <numjobs>100</numjobs>
+    <numjobs>320</numjobs>
     <memory>4000</memory>
-    <maxfilesperjob>16</maxfilesperjob>
+    <maxfilesperjob>5</maxfilesperjob>
     <outdir>&data_dir;/&release;/&name;</outdir>
     <logdir>&local_dir;/prod_log/&release;/&name;/run&runnum;</logdir>
     <workdir>&local_dir;/prod_work/&release;/&name;/run&runnum;</workdir>
